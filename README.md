@@ -1,46 +1,40 @@
-# Hugo template for Netlify CMS with Netlify Identity
+# The ragasirtahk Blog
+My personal blog. I share things I do here. View it here: https://www.ragasirtahk.tk/
 
-This is a small business template built with [Victor Hugo](https://github.com/netlify/victor-hugo) and [Netlify CMS](https://github.com/netlify/netlify-cms), designed and developed by [Darin Dimitroff](http://www.darindimitroff.com/), [spacefarm.digital](https://www.spacefarm.digital).
+## Technologies Used
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Hugo](http://gohugo.io/)
 
-## Getting started
+## Theme Used
+[Tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/) for Hugo.
 
-Use our deploy button to get your own copy of the repository. 
+### Theme Credits
+*Hugo* version of Tranquilpeak is a based on original [*Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak). This version is simply a port to *Hugo* static site generator. The port was done by [kakawait](https://github.com/kakawait).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&stack=cms)
+Please all the credit should be attributed to [original *Hexo* version](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak) and its author [Louis Barranqueiro](https://github.com/LouisBarranqueiro).
 
-This will setup everything needed for running the CMS:
+## Setup for Yourself
+I have created a guide explaining how someone can create a blog like mine using Hugo and Netlify CMS. You can view it [here](https://www.ragasirtahk.tk/2018/01/setting-up-netlify-cms-on-hugo/).
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
+## Use as boilerplate
+Most of us love boilerplates!
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
+>Feel free to use this repository as a boilerplate for your own blog. 
 
-Now you're all set, and you can start editing content!
+Credits if used as boilerplate (appreciated but not necessary).
 
-## Local Development
+>Credits to this repository and theme creators (see https://github.com/ragasirtahk/The-ragasirtahk-Blog#theme-credits) will be highly appreciated, it takes quite a significant amount of time to make such kind of boilerplate. 
 
-Clone this repository, and run `yarn` or `npm install` from the new folder to install all required dependencies.
+Delete the contents of `/content/post` before using as boilerplate. Also delete the AdSense ad code in `/themes/hugo-tranquilpeak-theme/layouts/partials/footer.html` and `/themes/hugo-tranquilpeak-theme/layouts/partials/post/header.html
+` and delete / change the Google Analytics tracking ID in the `/config.toml` file.
 
-Then start the development server with `yarn start` or `npm start`.
+Please also delete `manifest.json`, `OneSignalSDKWorker.js`, `OneSignalSDKUpdaterWorker.js` and the folder `__MACOSX` located in `/static`.
 
-## Layouts
+>You can simply fork/clone/download this repository, upload to your server or deploy to **Netlify** and create your own blog. Remember to delete the contents of `/content/post` before uploading or deploying it.
 
-The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
+## My love for Netlify
+And yes this blog deploys on Netlify (https://www.ragasirtahk.tk/). 
 
-Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
+![Deploys by Netlify](https://www.netlify.com/img/global/badges/netlify-dark.svg "Deploys by Netlify")
 
-## CSS
-
-The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
-
-## SVG
-
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
-
-```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
-```
+Hugo + Netlify CMS = ♥
